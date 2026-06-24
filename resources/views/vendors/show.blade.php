@@ -9,6 +9,9 @@
 
 <body>
     <h1>{{ $vendor->vendor_name }}の商品一覧</h1>
+    <!-- ↓XSSを受ける可能性があるため、使用するなら十分注意する -->
+    <!-- <h1>{!! $vendor->vendor_name !!}の商品一覧</h1> -->
+
     <table>
         <tr>
             <th>ID</th>
